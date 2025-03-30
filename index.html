@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annaprashan Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8e5c0;
+            overflow: hidden;
+        }
+
+        .invitation-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #6a3e2d;
+            padding: 20px;
+        }
+
+        .background-video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        .overlay {
+            background: rgba(255, 235, 204, 0.85);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            max-width: 450px;
+            position: relative;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .title {
+            font-size: 1.1rem;
+            font-family: 'Great Vibes', cursive;
+            color: #b85d09;
+        }
+
+        .baby-name {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #8c2f08;
+        }
+
+        .details, .date-time, .venue, .footer {
+            font-size: 0.8rem;
+            margin-top: 8px;
+            line-height: 1.0;
+        }
+
+        .diya {
+            width: 70px;
+            margin: 10px auto;
+            animation: flicker 1s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+
+
+        .banana-leaves {
+            width: 60px;
+            margin: 10px auto;
+            display: block;
+            animation: swayLeaves 3s infinite alternate ease-in-out;
+        }
+
+        @keyframes swayLeaves {
+            from { transform: rotate(-3deg); }
+            to { transform: rotate(3deg); }
+        }
+
+        .family-image img {
+            width: 45%;
+            border-radius: 10px;
+            margin-top: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation-container">
+        <video autoplay loop muted class="background-video">
+            <source src="images/baby_animation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="overlay">
+            <h1 class="title">You're Invited to</h1>
+            <h2 class="baby-name">Ayansh Dhar’s Annaprashan Ceremony</h2>
+            <img src="images/leaf.png" class="banana-leaves" alt="Banana Leaves">
+            <p class="details">Join us for this joyous occasion as our little one takes their first bite of solid food!</p>
+            <p class="date-time">📅 Date: Sunday, 06/April/2025 | ⏰ Time: 12 noon onwards</p>
+            <p class="venue">📍 Venue: Florida, United States</p>
+            <img src="images/Indian lamp.png" class="diya" alt="Diya Lamp">
+            <div class="family-image">
+                <img src="images/img2.jpg" alt="Family">
+            </div>
+            <p class="footer">With Love, <br> Jui Dhar And Kaushik Dhar</p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const diya = document.querySelector(".diya");
+            setInterval(() => {
+                diya.style.transform = `scale(${1 + Math.random() * 0.05})`;
+            }, 400);
+        });
+    </script>
+</body>
+</html>
