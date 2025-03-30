@@ -10,7 +10,7 @@ A beautifully designed **Annaprashan Invitation Web Page** built using **HTML, C
 ✅ **Easy to Customize** – Modify text, images, and styles effortlessly.  
 
 ## 🚀 Live Demo
-You can check out the live version of the invitation here: **[Live Demo](https://parthadee.github.io/Annaprashan-invitation/)** *(Replace # with the GitHub Pages link if hosted)*
+You can check out the live version of the invitation here: **[Live Demo](https://parthadee.github.io/Annaprashan-invitation/)**
 
 ## 📂 Project Structure
 ```
