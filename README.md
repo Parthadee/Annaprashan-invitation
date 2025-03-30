@@ -49,7 +49,7 @@ You can deploy this page on **GitHub Pages**:
 2. Navigate to **Pages** → Select **main branch** → **/(root)**.
 3. Click **Save** – Your page will be hosted at:
    ```
-   https://yourusername.github.io/annaprashan-invitation/
+   https://parthadee.github.io/Annaprashan-invitation/
    ```
 
 ## 🎨 Customization
