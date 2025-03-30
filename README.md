@@ -38,7 +38,7 @@ git clone https://github.com/Parthadee/Annaprashan-invitation.git
 ### 2️⃣ Open the Project
 Navigate to the folder and open `index.html` in a browser.
 ```bash
-cd annaprashan-invitation
+cd Annaprashan-invitation
 start index.html
 ```
 
